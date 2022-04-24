@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Responsive Web Design</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo">
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#">Skills</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Resume</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Send a message</a>
+                        </li>
+                        <li>
+                            <a href="#">Social Media</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact -->
+        <section>
+            <h1>Contact</h1>
+            <div>
+                <h2>Send a message</h2>
+                <p>A p element that comes after h2</p>
+                <form action="" method="POST">
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="surname">Surname: </label>
+                        <input type="text" id="surname" name="surname" 
+                        placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message"
+                        cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="social-media">
+                <h2>Social Media</h2>
+                <p>my social media accounts will be place in here</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
