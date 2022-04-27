@@ -3,6 +3,11 @@
     --headerFooter-bgColor: rgba(80, 75, 6, 0.4);
     --main-bgColor: rgba(118, 111, 11, .4);
 }
+/*
+Warning: 
+- You should avoid using gap on your application,
+because is not supported on safari browser.
+*/
 /* Select all elements */
 *{
     margin: 0;
