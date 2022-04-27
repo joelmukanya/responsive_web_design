@@ -14,7 +14,10 @@ because is not supported on safari browser.
     padding: 0;
     overflow-x: hidden;
 }
-/* header */
+/* header, footer and main*/
+header, footer, main {
+    min-width: 100%;
+}
 /* logo */
 header a #logo {
     width: 5em;
@@ -23,12 +26,14 @@ header a #logo {
 /* nav */
 header nav {
     float: right;
-    margin: 20px 20px 10px 0;
+    margin: .1em;
 }
 /* unordered list */
 header nav ul {
     display: inline-flex;
     flex-flow: row wrap;
+    margin: auto;
+    list-style: none;
 }
 /* lists */
 header nav ul li {
@@ -37,4 +42,60 @@ header nav ul li {
 /* header and footer */
 header, footer {
     background-color: var(--headerFooter-bgColor);
+}
+/* main */
+main {
+    min-height: 100vh;
+    background-color: var(--main-bgColor);
+}
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+/* section */
+section {
+    padding: 20px 0;
+}
+/* Make image responsive */
+section img {
+    min-width: 50%;
+}
+
+/*Odd -> Section*/
+main section:nth-child(odd) {
+    background-color: rgba(80, 75, 6, 0.4);
+}
+
+/*Even -> Section*/
+main section:nth-child(even) {
+   background-color: rgba(118, 111, 11, .4);
+}
+
+.sideByside {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: .5em;
+}
+/* image inside sideByside */
+.sideByside img {
+    margin: auto;
+    display: block;
+    margin: auto;
+}
+
+/* paragraph */
+.sideByside p, footer p {
+    flex: 2 auto 0;
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* Media query */
+@media screen and (min-width: 600px){
+    .sideByside {
+        display: grid;
+        /* 1 row and two column */
+        grid-template: auto / repeat(2, 1fr);
+    }
 }
